@@ -1,36 +1,22 @@
-# This is a Flutter Podfile
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'  # You can set your required iOS version
 
-# Define the platform version for iOS
-platform :ios, '15.0'  # Minimum iOS version for Flutter
+target 'Runner' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
 
-# CocoaPods master repo
-source 'https://github.com/CocoaPods/Specs.git'
+  # Pods for Runner
+  pod 'Firebase/Core'            # Firebase Core
+  pod 'Firebase/Analytics'       # Firebase Analytics
+  pod 'Firebase/RemoteConfig'    # Firebase Remote Config
 
-# Flutter generated CocoaPods settings
-flutter_application_path = '../'  # Relative path to your Flutter project
+  # Optional: Other dependencies (e.g., Firebase Crashlytics, Firestore)
+  # pod 'Firebase/Crashlytics'
+  # pod 'Firebase/Firestore'
 
-load File.join(flutter_application_path, 'packages', 'flutter_tools', 'bin', 'podhelper.rb')
+  target 'RunnerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
-# Define the target for the iOS app
-target 'babyimage' do
-  use_frameworks!  # If you're using Swift-based plugins, uncomment this line
-
-  # Flutter-specific pods
-  flutter_install_all_ios_pods(flutter_application_path)
-
-  # Firebase Pods
-  pod 'Firebase/Core', '~> 3.6.0'            # Firebase Core
-  pod 'Firebase/Analytics', '~> 9.1.1'       # Firebase Analytics
-  pod 'Firebase/RemoteConfig', '~> 5.1.3'    # Firebase Remote Config
-  pod 'Firebase/Firestore'                   # Firebase Cloud Firestore (without version)
-end
-
-# Define the target for testing
-target 'babyimageTests' do
-  inherit! :search_paths
-end
-
-# Define the target for UI tests
-target 'babyimageUITests' do
-  inherit! :search_paths
 end
