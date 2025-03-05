@@ -18,11 +18,10 @@
   <string>sms</string>
   <string>tel</string>
 </array>
-  // secure storage
+
   <key>NSUserTrackingUsageDescription</key>
   <string>This identifier will be used to deliver personalized ads to you.</string>
 
-   // add this code by croping package
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
