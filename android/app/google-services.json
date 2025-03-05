@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "956400082004",
+    "project_id": "babyimagegenerate",
+    "storage_bucket": "babyimagegenerate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956400082004:android:77130d81b7cf0d0ac221c1",
+        "android_client_info": {
+          "package_name": "com.example.babyimage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBky4cCNW-4qeGkCXysd6HAqWyn0NHto6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

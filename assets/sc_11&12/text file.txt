@@ -1,0 +1,5 @@
+select age text 55 semibold FFFFFF
+
+number text unpress 70 regular 353535
+
+press text 95 medium FFFFFF
